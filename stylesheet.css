@@ -1,0 +1,310 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: "Skolar Bold","Segoe UI Bold","Roboto Slab","Droid Serif",AvenirNext-Bold,"Avenir Bold",Georgia,"Times New Roman",Times,serif;
+}
+body{
+  background-color: #eee;
+}
+
+*:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ul{
+  list-style: none;
+}
+
+.placeholder{
+  margin:0 10px 10px 10px;
+  height:100px;
+  background-color:#ddd;
+}
+
+footer{
+  background-color: #eee;
+  clear:both;
+  height:200px;
+}
+
+.footer-container{
+  padding-top:20px;
+  margin:auto;
+
+}
+
+.footer-li{
+  float:left;
+  width:33%;
+  height:200px;
+}
+
+.footer-image{
+  width:30%;
+  height: 100px;
+  background-color:#777;
+}
+.footer-caption{
+  width:80%;
+  height: 100px;
+  background-color:#bbb;
+}
+
+.footer-text{
+  clear:both;
+  position:relative;
+  top:10px;
+  width:300px;
+  height:100px;
+  background-color:#ccc;
+}
+
+.main{
+  margin-top:40px;
+}
+
+.content{
+  background-color:white;
+  border-radius:0 .625em .625em;;
+}
+
+.navbar-logo{
+  background-color:#999;
+}
+.navbar-other{
+  background-color:#ddd;
+  color:#ddd;
+}
+
+.column li p{
+  background-color:#777;
+  color:#777;
+}
+.column li ul{
+  margin-bottom: 20px
+}
+.column li ul li{
+  background-color:#ddd;
+  height: 20px;
+}
+
+h2{
+  margin-top:25px;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+h3{
+  padding: .5em .5em .5em 0;
+  border-bottom: .08em solid rgba(0,0,0,.1);
+  font-size: 1.25em;
+  line-height: 1.35;
+  font-weight: 400;
+}
+
+article ul li{
+  display: inline-block;
+  padding: 1em 0 0 1.5em;
+  font-weight: 400;
+}
+
+article{
+  padding-left:20px;
+  border-bottom: .3125em solid #41b7d8;
+}
+.content-p1{
+  font-size: 1.25em;
+  line-height: 1.35;
+  font-weight: 400;
+  margin-top:20px;
+  padding: .5em 0;
+}
+
+.content-p2{
+  line-height: 1.46;
+  padding: .5em 0;
+  font-weight: 400;
+}
+
+.content-image{
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+.button{
+  background-color:#777;
+  width:100px;
+  height:40px;
+  margin-bottom:20px;
+  margin-top:20px;
+}
+
+.search{
+  margin:0 10px 10px 10px;
+  height:100px;
+  background-color:#ddd;
+}
+
+.search-bar{
+  position:relative;
+  width:250px;
+  height:30px;
+  top:40px;
+  left:20px;
+  background-color:#bbb;
+}
+
+.search-button{
+  position:relative;
+  width:80px;
+  height:30px;
+  top:10px;
+  left:270px;
+  background-color:#777;
+}
+
+
+
+
+@media only screen and (min-width: 1450px) {
+  .navbar{
+    float:left;
+    width:10%;
+  }
+  .navbar li {
+    padding: 1em 0 1em 1.375em;
+  }
+  .main{
+    float:left;
+    width:90%;
+  }
+  .sidebar{
+    width: 26.25em;
+    float:left;
+  }
+  .main-content{
+    width: calc(100% - 26.25em);
+    float:left;
+  }
+  .column{
+    float:left;
+    width:22%;
+  }
+  .column li{
+      padding: .25em .5em .25em 25%;
+  }
+  .content{
+    float:left;
+    width:78%;
+  }
+}
+
+@media only screen and (max-width: 1450px) {
+  .navbar{
+    float:none;
+  }
+  .navbar ul{
+    width:100%;
+  }
+  .navbar ul li{
+    float:left;
+    padding: 2.5em 1em .5em;
+  }
+  .main{
+  margin-top:20px;
+    float:left;
+    width:100%;
+  }
+  .sidebar{
+  width: 26.25em;
+  float:left;
+  }
+  .main-content{
+    width: calc(100% - 26.25em);
+    float:left;
+  }
+  .column{
+    float:left;
+    width:22%;
+  }
+  .column li{
+      padding: .25em .5em .25em 7%;
+  }
+  .content{
+    float:left;
+    width:78%;
+  }
+}
+
+@media only screen and (max-width: 1220px) {
+  .column{
+    position:relative;
+    top:-10px;
+    left:20px;
+    float:none;
+    width:100%;
+  }
+  .column li{
+    float:left;
+    padding: 0;
+  }
+  .column li p{
+    height:50px;
+  }
+  .column li ul{
+    display:none;
+  }
+  .content{
+    clear:both;
+    float:left;
+    width:100%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .sidebar{
+    width:0;
+    display:none;
+  }
+  .main-content{
+    width:100%;
+  }
+  .column{
+    float:left;
+    width:22%;
+    position:relative;
+    top:0;
+    left:0;
+  }
+  .column ul li{
+    display:block;
+    width:100%;
+    padding: .25em .5em .25em 7%;
+  }
+  .column li p{
+    height:auto;
+  }
+   .column li ul{
+    display:block;
+  }
+  .content{
+    clear:none;
+    width:78%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .column{
+    display:none;
+  }
+  .content{
+    clear:both;
+    float:left;
+    width:100%;
+  }
+
+}
+
